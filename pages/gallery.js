@@ -3,6 +3,7 @@ import GalleryPage from "../components/gallery";
 import Navbar from "../components/Navbar";
 import { Box, Grid } from "@chakra-ui/layout";
 
+
 const Home = ({ children, title = "Allen Roberts" }) => {
   return(
   <Box height="100%">
@@ -18,7 +19,7 @@ const Home = ({ children, title = "Allen Roberts" }) => {
     gridTemplateRows="repeat(12, 1fr)"
     overflowY="hidden"
     overflowX="hidden"
-    bg="red.50"
+    bgGradient="linear(to-r, white, red.600)"
   >
     <Box gridColumn="1/13" gridRow="1/2"  overflowY="auto" zIndex="10" bgGradient="linear(to-r, red.500, red.900)" >
       <Navbar></Navbar>
